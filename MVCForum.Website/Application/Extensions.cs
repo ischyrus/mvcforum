@@ -12,6 +12,22 @@ namespace MVCForum.Website.Application
 {
     public static class Extensions
     {
+        public static string LookForTheme(this string path)
+        {
+            const string views = "~/Views/";
+            if (!path.StartsWith(views))
+            {
+                return path;
+            }
+
+            var currentTheme = DependencyResolver.Current.GetService<ISettingsService>().GetSettings().Theme;
+            string result = String.Join("/", "~", "Themes", currentTheme, "Views", path.Substring(views.Length));
+            if (System.Web.Hosting.HostingEnvironment.VirtualPathProvider.FileExists(result))
+                return result;
+
+            return path;
+        }
+
         /// <summary>
         /// Create an action link to an action in the Admin area.
         /// </summary>
