@@ -811,6 +811,10 @@
     <Content Include="Areas\Admin\Views\AdminLanguage\Create.cshtml" />
     <Content Include="Content\stitchery\css\stitchery.css.map" />
     <Content Include="Content\stitchery\css\stitchery.less" />
+    <Content Include="..\..\..\Ischyrus.StitchStudio.Stitchery\Views\Stitchery\Header.cshtml">
+      <Link>Themes\StitchStudio\Views\Shared\Header.cshtml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\Local Deployment.pubxml" />
     <None Include="Scripts\jquery-1.11.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.11.1.js" />

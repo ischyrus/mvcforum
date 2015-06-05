@@ -1,0 +1,58 @@
+﻿html,
+body {
+  font-family: open-sans, sans-serif;
+  font-weight: 300;
+}
+a {
+  color: #b24c26;
+}
+.container {
+  width: 970px !important;
+}
+.brown-bg {
+  background-color: #b24c26;
+}
+.logo {
+  background-color: #f2f2f2;
+  border: 2px solid #b24c26;
+  text-align: center;
+  padding: 12px;
+}
+.logo img {
+  max-height: 100px;
+  max-width: 100%;
+}
+.top-nav {
+  background-image: url('/Content/stitchery/img/top-background.png');
+  background-repeat: no-repeat;
+  background-position-x: 90px;
+  background-position-y: bottom;
+  margin-bottom: 12px;
+}
+.top-nav-links {
+  text-align: center;
+}
+.top-nav-links .link {
+  background-color: #f2f2f2;
+  border: 2px solid #b24c26;
+  border-left-width: 0;
+  padding: 8px 0;
+  height: 40px;
+}
+.top-nav-links a {
+  color: #b24c26;
+  font-weight: normal;
+  text-decoration: none;
+}
+.top-nav-links a:hover {
+  text-decoration: underline;
+}
+.profile-summary {
+  background-color: #f2f2f2;
+  font-weight: normal;
+  padding: 12px 15px;
+}
+.profile-summary .intro {
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=stitchery.css.map */
